@@ -1,0 +1,22 @@
+<!doctype html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>範例</title>
+    <script language="javascript">
+      window.document.write(Number.MAX_VALUE + "<br>");
+      window.document.write(Number.MIN_VALUE + "<br>");
+      window.document.write(Number.NaN + "<BR>");
+      window.document.write(Number.NEGATIVE_INFINITY + "<br>");
+      window.document.write(Number.POSITIVE_INFINITY + "<br>");
+      var X = new Number(123.456);
+      window.document.write(X + "轉換為科學表示法得到" + X.toExponential() + "<br>");
+      window.document.write(X + "取到小數點後面二位得到" + X.toFixed(2) + "<br>");
+      window.document.write(X + "轉換為字串得到" + X.toString() + "<br>");     
+      window.document.write(X + "設定為8位精確位數得到" + X.toPrecision(8) + "<br>");
+      window.document.write(X + "取值得到" + X.valueOf() + "<br>");
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

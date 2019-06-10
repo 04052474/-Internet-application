@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>流程控制範例</title>
+    <script language="javascript">
+  do
+  {
+    Number = prompt("請輸入1-10的數字", "");
+    if (Number > 6)        	//太大了繼續做答
+    {
+      alert("太大了！請重新輸入！");
+    }
+    else if (Number < 6)  		//太小了繼續做答
+    {
+      alert("太小了！請重新輸入！");
+    }
+  }while(Number != 6)
+  alert("答對了！");
+  </script>
+  </head>
+  <body>
+  </body>
+</html>

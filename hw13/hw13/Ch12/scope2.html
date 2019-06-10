@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>函式範例</title>
+    <script language="javascript">
+      var Msg;													//宣告一個全域變數Msg
+      Msg = "Hello, This is outside of Func1().";	//設定全域變數Msg的值
+      alert(Msg); 			   								//顯示全域變數Msg的值
+      Func1();                   				//呼叫Func1() 函式
+      alert(Msg);     										//顯示全域變數Msg的值
+	  
+      function Func1()
+      {
+        Msg = "Hello, This is inside of Func1().";		//設定全域變數Msg的值
+        alert(Msg);   				    							//顯示全域變數Msg的值
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

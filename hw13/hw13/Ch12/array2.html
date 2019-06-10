@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>範例</title>
+  </head>
+  <body>
+    <table border="1">
+    <script language="javascript">
+      var Students = new Array(5);
+      for(var i = 0; i < Students.length; i++)
+        Students[i] = new Array(2);				//宣告Array物件的元素為另一個Array物件
+      Students[0][0] = "小丸子";				//一一指派二維陣列的值
+      Students[1][0] = "花輪";
+      Students[2][0] = "小玉";
+      Students[3][0] = "美環";
+      Students[4][0] = "丸尾";
+      Students[0][1] = 80;
+      Students[1][1] = 95;
+      Students[2][1] = 92;
+      Students[3][1] = 88;
+      Students[4][1] = 85;
+      for(var i = 0; i < Students.length; i++)	//使用巢狀迴圈顯示二維陣列的值
+      {
+        document.write("<tr>");
+        for(var j = 0; j < Students[i].length; j++)
+          document.write("<td>" + Students[i][j] + "</td>");
+        document.write("</tr>");
+      }
+    </script>
+    </table>
+  </body>
+</html>

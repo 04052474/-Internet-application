@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>範例</title>
+    <script language="javascript">
+      for(var Property in window.history)
+        window.document.write(Property + ":" + window.history[Property] + "<br>");
+    </script>	
+  </head>
+  <body>
+    <input type="button" value="上一頁" onclick="javascript:window.history.back();">
+    <input type="button" value="下一頁" onclick="javascript:window.history.forward();">
+  </body>
+</html>

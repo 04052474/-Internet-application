@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>函式範例</title>
+    <script language="javascript">
+      function Convert2F(DegreeC)	//宣告名稱為Convert2F、參數為DegreeC的函式
+      {
+        var DegreeF = DegreeC * 1.8 + 32;
+        alert("攝氏" + DegreeC + "度可以轉換為華氏" + DegreeF + "度");
+      }
+      var Temperature = prompt("請輸入攝氏溫度", "");
+      Convert2F(Temperature);		//呼叫函式時要將輸入的攝氏溫度當成參數傳入
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

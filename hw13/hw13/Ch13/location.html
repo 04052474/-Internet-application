@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>範例</title>
+    <script language="javascript">
+      for(var Property in window.location)
+        window.document.write(Property + ":" + window.location[Property] + "<br>");
+    </script>	
+  </head>
+  <body>
+    <input type="button" value="重新載入" 
+    onclick="javascript:window.location.reload();">
+    <input type="button" value="導向到Google台灣網站" 
+    onclick="javascript:window.location.replace('https://www.google.com.tw/');">
+  </body>  
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>範例</title>
+    <script language="javascript">
+      var MyWin = null;		//此變數將存放open() 所傳回的window物件，即新視窗
+      function OpenNewWindow()	//開啟新視窗
+      {
+        MyWin = window.open("new.html", "MyWin", "height=200, width=400");
+      } 
+      function CloseNewWindow()	//關閉新視窗
+      {
+        if(MyWin && MyWin.open && !MyWin.closed)
+          MyWin.close();
+      }
+      function CloseWindow()			//關閉本視窗
+      {
+        window.close();
+      }
+    </script>
+  </head>
+  <body>
+    <a href="javascript:window.OpenNewWindow();">開啟新視窗</a>
+    <a href="javascript:window.CloseNewWindow();">關閉新視窗</a>
+    <a href="javascript:window.CloseWindow();">關閉本視窗</a>
+  </body>
+</html>
